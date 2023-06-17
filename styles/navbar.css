@@ -1,0 +1,48 @@
+.navbar{
+    width:  100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: var(--soft-green);
+    margin: 0;
+}
+#brand img{
+    width: 100%;
+}
+.navbar #brand{
+    width: 14%;
+    font-size: 3rem;
+    font-family: 'NotoSans-Bold';
+    color: var(--primary-green);
+}
+.navbar ul{
+    
+    list-style-type: none;
+    margin-right: 50px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: auto 10px;
+    font-family: "NotoSans-Bold";
+    font-size: 1.5rem;
+}
+.navbar ul li:hover{
+    color: var(--black);
+}
+.navbar ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary-green);
+}
+.navbar ul li a:hover{
+    color: var(--black);
+}
+
+
+.navbar .button{
+    border: 3px solid var(--primary-green);
+
+}

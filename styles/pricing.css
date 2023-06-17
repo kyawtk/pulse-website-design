@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src: url('../fonts/NotoSans-ExtraBold.ttf') format('truetype');
+  }
+  *{
+    font-family: "NotoSans-Regular";
+  }
+body > *{
+    padding: 50px 0;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+#navbarContainer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin: -30px auto 50px auto;
+    width: 40%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+header h1{
+    font-size: 3.8rem;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-family: 'NotoSans-Bold';
+}
+header p{
+    font-size: 1.5rem;
+    word-spacing: 0px;
+    font-weight: lighter;
+    text-shadow: none;
+}
+.hero{
+    margin-top: 0;
+    background-color: var(--soft-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-text{
+    color: var(--primary-green);
+    
+}
+.big-word{
+    width: 70%;
+    margin: 20px auto;
+    font-family: "NotoSans-Bold";
+    font-size: 2.5rem;
+    line-height: 30px;
+}
+.pricing{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+.card-container{
+    box-sizing: border-box;
+    margin: auto;
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-container div:nth-child(2),.card-container div:nth-child(3){
+    background-color: white;
+    
+}
+.card-container div:nth-child(2),.card-container div:nth-child(3){
+    border-radius: 8px;
+}
+.card-container div:nth-child(1){
+    border: none;
+    width: 200px;
+       text-align: start;
+}
+
+.list li{
+    
+    margin: 10px auto 10px 20px;
+ 
+}.card-container div:nth-child(3){
+    border: 1px solid var(--grey);
+}
+.card-container div:nth-child(3) small{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--grey);
+    padding: 10px 20px;
+    background-color: #F2F3F3;
+    font-weight: lighter;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.88);
+    font-family: "NotoSans-Regular";
+}
+.mark-list{
+    text-align: start;
+    margin: 10px 20px;
+    list-style-type:none;
+    transition: all 0.2s ease-in-out;
+}
+.mark-list li{
+    margin: 10px auto;
+    padding-left: 10px;
+    position: relative;
+}
+.mark-list li::before{
+    position: absolute;
+    top: 0;
+    left: -5px;
+    content: "✓";
+    color: green;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.grey-text{
+    color: var(--grey);
+    text-shadow: none;
+}
+
+
+.price-card{
+    border-radius: 5px;
+    text-align: center;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-green);
+}
+
+.price-card small{
+    font-family: "NotoSans-Bold";
+    background-color: var(--primary-green);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.quote{
+    margin:50PX auto 30PX AUTO;
+    width: 50%;
+    text-align: center;
+}
+.quote img{
+    width: 80px;
+}
+blockquote{
+    text-shadow: none;
+    font-size: 1.5rem;
+    
+    margin: 10px auto;
+}
+
+
+.price-card .button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--light-green);
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin : 10px auto;
+    transition: all 100ms ease;
+}
+.price-card .button:hover{
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+
+.faq{
+    margin: 50px auto;
+    position: relative;
+    width: 80%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+    
+}
+.faq::before{
+    content: "FAQ";
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top:-10px;
+    left: 0;
+}
+.qAnda{
+    font-size: 2rem;
+    
+}
+#footerContainer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+

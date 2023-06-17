@@ -1,0 +1,171 @@
+body {
+  background-color: var(--white);
+}
+* {
+    font-family: "NotoSans-Regular";
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  background-color: var(--soft-green);
+  padding: 50px 0;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.286);
+}
+header p {
+  font-size: 1.8rem;
+  color: var(--font-color);
+}
+header > * {
+  margin: 20px auto 20px auto;
+}
+
+.forms {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-info ,.billing-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#customer-info-form ,#billing-form{
+    max-width: 400PX;
+  min-width: 400px;
+  padding: 50px;
+  border: 1px solid #00000043;
+  border-radius: 5px;
+  box-shadow: 1px 2px 32px rgba(0, 0, 0, 0.116);
+}
+#customer-info-form label {
+  display: block;
+  margin: 20px auto;
+}
+label {
+  color: var(--grey);
+  font-size: small;
+}
+input {
+  width: 90%;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.152);
+  display: block;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.344);
+}
+input:hover {
+  outline: none;
+  border: 1px solid blue;
+}
+
+.testimonial,.billing-notice {
+    max-width: 300px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial .plan-info,.review, .testimonial div:nth-child(3) {
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.457);
+}
+.plan-info h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--font-color);
+}
+.plan-info p {
+  color: var(--grey);
+  font-size: 1.5rem;
+}
+
+.review blockquote{
+    width: 70%;
+    margin: 10px 0;
+    font-weight: bold;
+    color: var(--font-color);
+    font-size: 1.3rem;
+}
+.review p.grey-text{
+    
+    font-weight: bold;
+}
+
+
+.testimonial div:nth-child(3) {
+
+}
+.testimonial div:nth-child(3) h2 {
+    color: var(--font-color);
+    font-size: 2rem;
+}
+.testimonial div:nth-child(3) small {
+
+}
+.testimonial div:nth-child(3) a{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(66, 66, 246);
+}
+
+.card-input input{
+   
+}
+.card-input input::after {
+    content: ' ';
+  }
+  
+.card-input input:nth-child(4n)::after {
+    content: ' ';
+  }
+
+#billing-form{
+    
+    margin-top: 70px;
+}
+.billing-info{
+    position: relative;
+}
+.billing-notice{
+
+}
+.billing-notice h1{
+    font-family: "NotoSans-Bold";
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    columns: var(--font-color);
+}
+  .big-text{
+    font-size: 2rem;
+    color: var(--font-color);
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+input[type="submit"]{
+    margin: 50px;
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    outline: none;
+    border:none;
+    
+    background-color: var(--light-green);
+}
+input[type="submit"]:hover{
+     box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.373);
+}

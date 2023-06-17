@@ -1,0 +1,50 @@
+
+
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: "NotoSans-Thin";
+    src: url('../fonts/NotoSans-Thin.ttf');
+}
+  
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url('../fonts/NotoSans-Bold.ttf');
+}
+
+:root{
+    --font-color: #464951;
+    --soft-green : #EAFAF1;
+    --primary-green : rgb(0,173,106);
+    --grey : #83858A;
+    --black:#080C16;
+    --light-green : #1FE374;
+    --white : #FCFCFC;
+}
+*{  
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: "NotoSans-Regular";
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.button{
+    transition:all 0.1s ease;
+    padding: 10px 20px;
+}
+
+.button:hover{
+    box-shadow: -5px 5px 0 var(--primary-green)  ; 
+}
+.grey-text{
+    color: var(--grey);
+
+
+    
+}

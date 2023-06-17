@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Pulse</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/signup.css" />
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+    <header>
+      <div id="brand">
+        <img src="../pulse-logo.svg" alt="Pulse" />
+      </div>
+      <p>Take control of your cash flow with the #1 cash flow software.</p>
+    </header>
+    <section class="forms">
+      <div class="customer-info">
+        <form action="#" id="customer-info-form">
+          <label for="first-name"
+            >First Name:
+            <input type="text" id="first-name" name="first-name" required
+          /></label>
+
+          <label for="last-name"
+            >Last Name:
+            <input type="text" id="last-name" name="last-name" required
+          /></label>
+
+          <label for="email"
+            >Email:<input type="email" id="email" name="email" required
+          /></label>
+
+          <label for="company-name"
+            >Company Name:
+            <input type="text" id="company-name" name="company-name"
+          /></label>
+
+          <label for="password"
+            >Password:<input
+              type="password"
+              id="password"
+              name="password"
+              required
+          /></label>
+
+          <label for="confirm-password"
+            >Confirm Password:
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+          /></label>
+        </form>
+        <div class="testimonial">
+          <div class="plan-info">
+            <h1>Pulse Basic</h1>
+            <p>free trial • $34 per month</p>
+          </div>
+          <div class="review">
+            <blockquote>
+              ″Pulse takes the fear and stress out of cash flow projection and
+              management.″
+            </blockquote>
+            <p>Christopher Nolan</p>
+            <p class="grey-text">Creator of the Avatar.Inc</p>
+          </div>
+          <div>
+            <h2>Need More Accounts?</h2>
+            <small
+              >If you need more than one financial account, you should try our
+              Pulse Plus plan. For $30 more per month you'll get five financial
+              accounts and unlimited users.</small
+            >
+            <a href="#">Switch Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="billing-info">
+        <p class="big-text">Billing Info</p>
+        <form action="#" id="billing-form">
+          <label for="card-name"
+            >Name On the Card:
+            <input type="text" id="card-name" name="card-name" required
+          /></label>
+          <label for="card-number" class="card-input"
+            >Credit or Debit:
+            <input type="number" minlength="0" maxlength="16" required
+          /></label>
+          <small
+            >All data and transactions are securely stored and processed using
+            industry standards.</small
+          >
+        </form>
+        <div class="customer-info">
+          <div class="billing-notice">
+            <h1>Cancle Anytime</h1>
+            <p>
+              Your first month is free, but we ask for your credit card upfront
+              to prevent an interruption in service. We won't charge you until
+              the end of your 30-day free trial.
+            </p>
+            <p>
+              We'll email you reminders before your free trial is up, and we'll
+              send you invoices each month when we charge your card.
+            </p>
+          </div>
+        </div>
+      </div>
+      <input type="submit" class="button" value="Start Trial">
+    </section>
+    <div id="footerContainer"></div>
+    <script>
+         // Fetch the navbar HTML file
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      // Insert the navbar HTML into the navbarContainer element
+      document.getElementById('navbarContainer').innerHTML = data;
+    });
+  // Fetch the footer HTML file
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      // Insert the navbar HTML into the navbarContainer element
+      document.getElementById('footerContainer').innerHTML = data;
+    });
+
+
+    </script>
+  </body>
+</html>
